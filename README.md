@@ -52,7 +52,7 @@ It will be the name of the document.
 
 It will be the type of the document, either `"TRANSFERABLE_RECORD"` or `"VERIFIABLE_DOCUMENT"`.
 
-##### defaults
+##### Defaults
 
 It contains information about the template/renderer and the issuer and some other information depending on your forms requirement.
 
@@ -79,7 +79,7 @@ In this case it will look something like this:
 }
 ```
 
-##### schema
+##### Schema
 
 It contains the structure of the form in JSON schema format.
 
@@ -102,7 +102,7 @@ A simple form structure will look something like this:
 }
 ```
 
-##### attachments
+##### Attachments
 
 It contains the information about the required attachments for this document.
 
@@ -143,7 +143,7 @@ It will be the name of the document.
 
 It will be the type of the document, either `"TRANSFERABLE_RECORD"` or `"VERIFIABLE_DOCUMENT"`.
 
-##### defaults
+##### Defaults
 
 It contains information about the template/renderer and the issuer and some other information depending on your forms requirement.
 
@@ -175,7 +175,7 @@ In this case it will look something like this:
 
 The `"logo"` will be a url of the image.
 
-##### schema
+##### Schema
 
 It contains the structure of the form in JSON schema format.
 
@@ -197,7 +197,7 @@ A simple form structure will look something like this:
 }
 ```
 
-##### attachments
+##### Attachments
 
 It contains the information about the required attachments for this document.
 
