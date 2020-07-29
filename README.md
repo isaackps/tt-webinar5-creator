@@ -239,12 +239,12 @@ The `"accept"` set the accepted file types. If you want to accept all file types
 
 ## Useful Links
 
-- creator.tradetrust.io - Document Creator website
+- https://creator.tradetrust.io - Document Creator website
 
-- dev.tradetrust.io - Ropsten testnet document verifier
+- https://dev.tradetrust.io - Ropsten testnet document verifier
 
-- tradetrust.io - Mainnet network document verifier
+- https://tradetrust.io - Mainnet network document verifier
 
-- rinkeby.tradetrust.io - rinkeby testnet document verifier
+- https://rinkeby.tradetrust.io - rinkeby testnet document verifier
 
 - https://rjsf-team.github.io/react-jsonschema-form/ - Json schema form playground
