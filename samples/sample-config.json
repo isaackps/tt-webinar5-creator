@@ -1,0 +1,83 @@
+{
+  "network": "ropsten",
+  "wallet": "{\"address\":\"6a36c563a5350d7be66c801f901a67e413adbdfa\",\"id\":\"9e2d12d0-fb5b-49d4-9aa4-a0eb5b665233\",\"version\":3,\"Crypto\":{\"cipher\":\"aes-128-ctr\",\"cipherparams\":{\"iv\":\"127c21b337a16bc24621e24e73614378\"},\"ciphertext\":\"a78db406835261f59394397b2682088eb2ada80552908bd5cfd92c915def4c54\",\"kdf\":\"scrypt\",\"kdfparams\":{\"salt\":\"8bb0ac10564a4297c6f934fd6a08c25cd3f7958b31dd13eb6e0e30eebd8fcaba\",\"n\":131072,\"dklen\":32,\"p\":1,\"r\":8},\"mac\":\"1b1821d6f4186ce34952196142602ffacffff6f3a5a603c7cd02d301c47ab697\"},\"x-ethers\":{\"client\":\"ethers.js\",\"gethFilename\":\"UTC--2020-07-24T03-18-04.0Z--6a36c563a5350d7be66c801f901a67e413adbdfa\",\"mnemonicCounter\":\"8cf993a436e09d6f06d81dec993c6fec\",\"mnemonicCiphertext\":\"56a1a1d07a1d856514fc7fb03c553a77\",\"path\":\"m/44'/60'/0'/0/0\",\"version\":\"0.1\"}}",
+  "forms": [
+    {
+      "name": "Bill of Lading",
+      "type": "TRANSFERABLE_RECORD",
+      "defaults": {
+        "$template": {
+          "type": "EMBEDDED_RENDERER",
+          "name": "BILL_OF_LADING",
+          "url": "https://demo-cnm.openattestation.com"
+        },
+        "issuers": [
+          {
+            "identityProof": {
+              "type": "DNS-TXT",
+              "location": "isaactest.xyz"
+            },
+            "name": "My token registry",
+            "tokenRegistry": "0x6D489a6A2cbcB76FcEeA26102d1273cd4d3B6b10"
+          }
+        ],
+        "name": "Maersk Bill of Lading"
+      },
+      "schema": {
+        "type": "object",
+        "required": ["blNumber"],
+        "properties": {
+          "blNumber": {
+            "type": "string",
+            "title": "BL Number"
+          }
+        }
+      },
+      "attachments": {
+        "allow": true,
+        "accept": ".pdf"
+      }
+    },
+    {
+      "name": "Covering Letter (GT)",
+      "type": "VERIFIABLE_DOCUMENT",
+      "defaults": {
+        "$template": {
+          "type": "EMBEDDED_RENDERER",
+          "name": "COVERING_LETTER",
+          "url": "https://generic-templates.openattestation.com"
+        },
+        "issuers": [
+          {
+            "name": "Demo Issuer",
+            "documentStore": "0x2D96973f9553652E49F3901bEcAADb20b8CC5622",
+            "identityProof": {
+              "type": "DNS-TXT",
+              "location": "isaactest.xyz"
+            }
+          }
+        ],
+        "name": "Covering Letter",
+        "logo": "https://www.aretese.com/images/govtech-animated-logo.gif",
+        "title": "Documents Bundle",
+        "description": "Some very important documents in here for some submission"
+      },
+      "schema": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Document Title"
+          },
+          "description": {
+            "type": "string",
+            "title": "Document Description"
+          }
+        }
+      },
+      "attachments": {
+        "allow": true
+      }
+    }
+  ]
+}
