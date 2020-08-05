@@ -23,7 +23,7 @@ It will look something like this:
 ```
 {
   "network": "ropsten",
-  "waller": "...",
+  "wallet": "...",
   "forms": [{...}]
 }
 ```
