@@ -1,0 +1,42 @@
+{
+  "name": "Demo Covering Letter",
+  "type": "VERIFIABLE_DOCUMENT",
+  "defaults": {
+    "$template": {
+      "type": "EMBEDDED_RENDERER",
+      "name": "COVERING_LETTER",
+      "url": "https://generic-templates.openattestation.com"
+    },
+    "issuers": [
+      {
+        "name": "Demo Issuer",
+        "documentStore": "0x2D96973f9553652E49F3901bEcAADb20b8CC5622",
+        "identityProof": {
+          "type": "DNS-TXT",
+          "location": "isaactest.xyz"
+        }
+      }
+    ],
+    "name": "Covering Letter",
+    "logo": "https://www.aretese.com/images/govtech-animated-logo.gif",
+    "title": "Documents Bundle",
+    "description": "Some very important documents in here for some submission"
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "title": "Document Title"
+      },
+      "description": {
+        "type": "string",
+        "title": "Document Description"
+      }
+    }
+  },
+  "attachments": {
+    "allow": true,
+    "accept": [".pdf", ".png"]
+  }
+}
